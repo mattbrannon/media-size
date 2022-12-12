@@ -4,6 +4,9 @@
   "description": "",
   "main": "lib/index.js",
   "type": "module",
+  "bin": {
+    "sizeOf": "bin/get-media-size.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
