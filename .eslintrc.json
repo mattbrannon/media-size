@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "no-unused-expressions": "off",
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-unused-vars": "off",
+    "no-empty": "warn",
+    "no-multiple-empty-lines": ["off", { "max": 8, "maxEOF": 2 }],
+    "n/no-callback-literal": "off",
+    "brace-style": ["error", "stroustrup"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "multiline-ternary": "off",
+    "no-unneeded-ternary": "error",
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": ["ConditionalExpression > *"],
+        "SwitchCase": 1
+      }
+    ],
+    "object-curly-spacing": ["error", "always"]
+  }
+}
